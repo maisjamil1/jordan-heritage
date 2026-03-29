@@ -1,0 +1,60 @@
+{
+  "periods": {
+    "prehistoric": "ما قبل التاريخ",
+    "bronze": "العصر البرونزي",
+    "iron": "العصر الحديدي",
+    "nabataean": "النبطي",
+    "hellenistic": "الهيلينستي",
+    "roman": "الروماني",
+    "byzantine": "البيزنطي",
+    "islamic": "الإسلامي",
+    "crusader": "الصليبي",
+    "ayyubid": "الأيوبي",
+    "mamluk": "المملوكي",
+    "ottoman": "العثماني"
+  },
+  "types": {
+    "city": "مدينة",
+    "castle": "قلعة",
+    "temple": "معبد",
+    "church": "كنيسة",
+    "mosque": "مسجد",
+    "fort": "حصن",
+    "palace": "قصر",
+    "theater": "مسرح",
+    "citadel": "قلعة / حصن",
+    "tell": "تل أثري",
+    "rock-art": "نقوش صخرية"
+  },
+  "statuses": {
+    "preserved": "محفوظ",
+    "endangered": "مهدد",
+    "under-restoration": "تحت الترميم",
+    "digitized": "مرقمن"
+  },
+  "governorates": {
+    "amman": "عمّان",
+    "irbid": "إربد",
+    "zarqa": "الزرقاء",
+    "mafraq": "المفرق",
+    "ajloun": "عجلون",
+    "jarash": "جرش",
+    "balqa": "البلقاء",
+    "madaba": "مادبا",
+    "karak": "الكرك",
+    "tafilah": "الطفيلة",
+    "maan": "معان",
+    "aqaba": "العقبة"
+  },
+  "categories": {
+    "manuscripts": "مخطوطات",
+    "photos": "صور فوتوغرافية",
+    "maps": "خرائط",
+    "documents": "وثائق"
+  },
+  "projectStatuses": {
+    "completed": "مكتمل",
+    "ongoing": "قيد التنفيذ",
+    "planned": "مخطط"
+  }
+}

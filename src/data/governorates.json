@@ -1,0 +1,86 @@
+[
+  {
+    "id": "amman",
+    "name": "عمّان",
+    "lat": 31.9454,
+    "lng": 35.9284,
+    "sitesCount": 85
+  },
+  {
+    "id": "irbid",
+    "name": "إربد",
+    "lat": 32.5568,
+    "lng": 35.8469,
+    "sitesCount": 62
+  },
+  {
+    "id": "zarqa",
+    "name": "الزرقاء",
+    "lat": 32.0728,
+    "lng": 36.0880,
+    "sitesCount": 35
+  },
+  {
+    "id": "mafraq",
+    "name": "المفرق",
+    "lat": 32.3372,
+    "lng": 36.2082,
+    "sitesCount": 28
+  },
+  {
+    "id": "ajloun",
+    "name": "عجلون",
+    "lat": 32.3325,
+    "lng": 35.7519,
+    "sitesCount": 22
+  },
+  {
+    "id": "jarash",
+    "name": "جرش",
+    "lat": 32.2747,
+    "lng": 35.8911,
+    "sitesCount": 30
+  },
+  {
+    "id": "balqa",
+    "name": "البلقاء",
+    "lat": 32.0372,
+    "lng": 35.7287,
+    "sitesCount": 40
+  },
+  {
+    "id": "madaba",
+    "name": "مادبا",
+    "lat": 31.7169,
+    "lng": 35.7939,
+    "sitesCount": 45
+  },
+  {
+    "id": "karak",
+    "name": "الكرك",
+    "lat": 31.1853,
+    "lng": 35.7015,
+    "sitesCount": 55
+  },
+  {
+    "id": "tafilah",
+    "name": "الطفيلة",
+    "lat": 30.8375,
+    "lng": 35.6044,
+    "sitesCount": 20
+  },
+  {
+    "id": "maan",
+    "name": "معان",
+    "lat": 30.1962,
+    "lng": 35.7341,
+    "sitesCount": 75
+  },
+  {
+    "id": "aqaba",
+    "name": "العقبة",
+    "lat": 29.5321,
+    "lng": 35.0063,
+    "sitesCount": 51
+  }
+]
