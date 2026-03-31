@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:$PATH\")",
+      "Bash(npm run:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/mais/.nvm/versions/node/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(source ~/.nvm/nvm.sh)",
+      "Bash(nvm use:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git config:*)"
+    ]
+  }
+}
