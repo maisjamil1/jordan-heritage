@@ -34,7 +34,7 @@ export function SiteFilters({
   onSearchChange,
 }: SiteFiltersProps): React.ReactElement {
   return (
-    <div className="bg-white/80 backdrop-blur-sm border border-border rounded-xl p-4 md:p-6 mb-6 md:mb-8 sticky top-[68px] z-30 shadow-sm">
+    <div className="bg-white border border-border rounded-xl p-4 md:p-6 mb-6 md:mb-8 sticky top-[68px] z-30 shadow-sm">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
         {/* Governorate filter */}
         <div className="flex flex-col gap-1.5">
