@@ -43,10 +43,10 @@ export function SiteFilters({
             <SelectTrigger className="w-full h-10 bg-white">
               <SelectValue placeholder="جميع المحافظات" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">جميع المحافظات</SelectItem>
+            <SelectContent className="bg-white border border-gray-200 shadow-lg">
+              <SelectItem value="all" className="text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-900">جميع المحافظات</SelectItem>
               {Object.entries(labels.governorates).map(([key, label]) => (
-                <SelectItem key={key} value={key}>
+                <SelectItem key={key} value={key} className="text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-900">
                   {label}
                 </SelectItem>
               ))}
@@ -61,10 +61,10 @@ export function SiteFilters({
             <SelectTrigger className="w-full h-10 bg-white">
               <SelectValue placeholder="جميع العصور" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">جميع العصور</SelectItem>
+            <SelectContent className="bg-white border border-gray-200 shadow-lg">
+              <SelectItem value="all" className="text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-900">جميع العصور</SelectItem>
               {Object.entries(labels.periods).map(([key, label]) => (
-                <SelectItem key={key} value={key}>
+                <SelectItem key={key} value={key} className="text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-900">
                   {label}
                 </SelectItem>
               ))}
@@ -79,10 +79,10 @@ export function SiteFilters({
             <SelectTrigger className="w-full h-10 bg-white">
               <SelectValue placeholder="جميع الأنواع" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">جميع الأنواع</SelectItem>
+            <SelectContent className="bg-white border border-gray-200 shadow-lg">
+              <SelectItem value="all" className="text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-900">جميع الأنواع</SelectItem>
               {Object.entries(labels.types).map(([key, label]) => (
-                <SelectItem key={key} value={key}>
+                <SelectItem key={key} value={key} className="text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:text-gray-900">
                   {label}
                 </SelectItem>
               ))}

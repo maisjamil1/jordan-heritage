@@ -19,7 +19,7 @@ const INITIAL_MESSAGES: Message[] = [
 
 const BOT_REPLIES: Record<string, string> = {
   default: 'شكراً على سؤالك! يمكنك استكشاف مواقعنا الأثرية، الأرشيف الرقمي، والخريطة التفاعلية للتعرف أكثر على التراث الأردني.',
-  petra: 'البتراء هي إحدى عجائب الدنيا السبع الجديدة، وتقع في جنوب الأردن. تُعرف بمبانيها المنحوتة في الصخر الوردي.',
+  petra: 'البترا هي إحدى عجائب الدنيا السبع الجديدة، وتقع في جنوب الأردن. تُعرف بمبانيها المنحوتة في الصخر الوردي.',
   jerash: 'جرش تحتضن أحد أكمل المدن الرومانية المحافظة في العالم، وتُقام فيها مهرجانات ثقافية سنوية.',
   مواقع: 'يمكنك تصفح جميع المواقع الأثرية من خلال صفحة "المواقع" أو عبر الخريطة التفاعلية.',
   خريطة: 'تتيح لك خريطتنا التفاعلية استكشاف المواقع الأثرية في جميع أنحاء الأردن بشكل بصري ومباشر.',
@@ -32,7 +32,7 @@ function now(): string {
 
 function getBotReply(text: string): string {
   const lower = text.toLowerCase();
-  if (lower.includes('petra') || lower.includes('بترا') || lower.includes('البتراء')) return BOT_REPLIES.petra;
+  if (lower.includes('petra') || lower.includes('بترا') || lower.includes('البترا')) return BOT_REPLIES.petra;
   if (lower.includes('jerash') || lower.includes('جرش')) return BOT_REPLIES.jerash;
   if (text.includes('مواقع') || text.includes('أثري')) return BOT_REPLIES['مواقع'];
   if (text.includes('خريطة')) return BOT_REPLIES['خريطة'];

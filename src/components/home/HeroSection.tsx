@@ -28,10 +28,11 @@ export function HeroSection(): React.ReactElement {
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up"
             style={{
               animationDelay: '0.15s',
-              background: 'linear-gradient(135deg, #f96b09 60%, #0074ae 70%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
+                color:"#f96b09",
+              // background: 'linear-gradient(135deg, #f96b09 60%, #0074ae 70%)',
+              // WebkitBackgroundClip: 'text',
+              // WebkitTextFillColor: 'transparent',
+              // backgroundClip: 'text',
             }}
           >
             اكتشف تراثنا الرقمي
@@ -56,7 +57,7 @@ export function HeroSection(): React.ReactElement {
               onClick={() => navigate('/map')}
             >
               <Compass className="w-5 h-5 ms-2" />
-              ابدأ الجولة الافتراضية
+                استكشف الخريطة التفاعلية
             </Button>
             <Button
               size="lg"

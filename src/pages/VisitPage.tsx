@@ -46,7 +46,7 @@ const TOURS = [
     id: 1,
     name: 'جولة الأنباط الكاملة',
     duration: '6 ساعات',
-    sites: ['البتراء', 'متحف البتراء'],
+    sites: ['البترا', 'متحف البترا'],
     price: '25 دينار',
   },
   {
@@ -346,7 +346,7 @@ export function VisitPage(): React.ReactElement {
                   </div>
                 </div>
                 <p className="text-[10px] text-muted-foreground mt-2 font-medium">
-                  * قد تختلف الأسعار حسب الموقع (البتراء لها تسعيرة خاصة).
+                  * قد تختلف الأسعار حسب الموقع (البترا لها تسعيرة خاصة).
                 </p>
               </div>
 

@@ -74,6 +74,7 @@ export function ConfirmationScreen({
         </h2>
         <p className="text-body text-base">
           شكراً لك على المساهمة في حماية التراث الأردني
+          - لقد حصلت عل ١٠ نقاط
         </p>
       </div>
 
