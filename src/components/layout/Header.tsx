@@ -7,7 +7,6 @@ import {
   Archive,
   FolderKanban,
   GraduationCap,
-  MapPin,
   Users,
   AlertTriangle,
   Map,
@@ -17,7 +16,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
-
+import logo from "../../../public/logo.jpeg"
 interface NavItem {
   label: string;
   path: string;
@@ -48,11 +47,11 @@ export function Header(): React.ReactElement {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-colors">
-              <MapPin className="w-6 h-6 text-white" />
+              <img src={logo} width={"40"} height={"40"} />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-white text-sm font-bold leading-tight !text-white">
-                بوابة الأردن الأثرية
+                عدسة - بوابة الأردن الأثرية
               </h1>
               <p className="text-white/70 text-xs !text-white/70">دائرة الآثار العامة</p>
             </div>
