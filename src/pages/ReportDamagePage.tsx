@@ -57,8 +57,8 @@ export function ReportDamagePage(): React.ReactElement {
       <div className="max-w-2xl mx-auto">
         <SectionHeader
           icon={Shield}
-          title="الإبلاغ عن الأضرار"
-          subtitle="ساهم في حماية التراث الأثري الأردني بالإبلاغ عن أي ضرر أو تعدٍّ على المواقع الأثرية"
+          title="حارس التراث"
+          subtitle="الإبلاغ عن الأضرار - ساهم في حماية التراث الأثري الأردني بالإبلاغ عن أي ضرر أو تعدٍّ على المواقع الأثرية"
         />
 
         {/* Form / Confirmation Card */}
