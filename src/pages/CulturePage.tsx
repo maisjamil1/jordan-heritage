@@ -82,8 +82,8 @@ const FUN_FACTS = [
   {
     icon: Sparkles,
     text: 'يُعد المنسف الأردني أكثر من مجرد طبق — إنه طقس اجتماعي متكامل يُحضّر ويُؤكل بطريقة تقليدية خاصة باليد اليمنى فقط.',
-    color: 'bg-orange/10 border-orange/20',
-    iconColor: 'text-orange',
+    color: 'bg-primary/10 border-primary/20',
+    iconColor: 'text-primary',
   },
   {
     icon: Lightbulb,
@@ -94,8 +94,8 @@ const FUN_FACTS = [
   {
     icon: Sparkles,
     text: 'التطريز الأردني يروي قصصاً كاملة — فكل لون ونقش يحمل دلالة على المنطقة الجغرافية والحالة الاجتماعية لصاحبته.',
-    color: 'bg-orange/10 border-orange/20',
-    iconColor: 'text-orange',
+    color: 'bg-primary/10 border-primary/20',
+    iconColor: 'text-primary',
   },
   {
     icon: Lightbulb,
@@ -127,7 +127,7 @@ export function CulturePage(): React.ReactElement {
         {/* Did You Know section */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-3xl font-extrabold text-heading mb-6 flex items-center justify-center gap-2">
-            <Lightbulb className="size-7 text-orange" />
+            <Lightbulb className="size-7 text-primary" />
             هل تعلم؟
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -172,8 +172,8 @@ function CultureCard({ item }: CultureCardProps): React.ReactElement {
     <div
       className={cn(
         'bg-white rounded-xl ring-1 ring-foreground/10 overflow-hidden transition-all duration-300 cursor-pointer',
-        'hover:shadow-lg hover:-translate-y-1 hover:ring-orange/30',
-        expanded && 'ring-orange/40 shadow-lg'
+        'hover:shadow-lg hover:-translate-y-1 hover:ring-primary/30',
+        expanded && 'ring-primary/40 shadow-lg'
       )}
       onClick={() => setExpanded((prev) => !prev)}
       role="button"
@@ -188,7 +188,7 @@ function CultureCard({ item }: CultureCardProps): React.ReactElement {
       {/* Main card content */}
       <div className="p-6 md:p-8 text-center">
         {/* Icon */}
-        <div className="size-16 md:size-20 rounded-2xl gradient-orange mx-auto mb-4 flex items-center justify-center shadow-md">
+        <div className="size-16 md:size-20 rounded-2xl gradient-primary mx-auto mb-4 flex items-center justify-center shadow-md">
           <Icon className="size-8 md:size-10 text-white" />
         </div>
 
@@ -201,7 +201,7 @@ function CultureCard({ item }: CultureCardProps): React.ReactElement {
         </p>
 
         {/* Count badge */}
-        <Badge className="gradient-orange text-white text-sm px-4 py-1 h-auto rounded-full">
+        <Badge className="gradient-primary text-white text-sm px-4 py-1 h-auto rounded-full">
           {item.count} {item.countLabel}
         </Badge>
 
@@ -228,7 +228,7 @@ function CultureCard({ item }: CultureCardProps): React.ReactElement {
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
             {details?.items.map((detailItem, idx) => (
               <li key={idx} className="flex items-center gap-2 text-sm text-body">
-                <span className="size-1.5 rounded-full bg-orange flex-shrink-0" />
+                <span className="size-1.5 rounded-full bg-primary flex-shrink-0" />
                 {detailItem}
               </li>
             ))}

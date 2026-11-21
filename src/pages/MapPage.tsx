@@ -257,7 +257,7 @@ export function MapPage(): React.ReactElement {
 
       {/* Site count */}
       <div className="flex items-center gap-2 text-sm text-[#475569]">
-        <MapPin className="w-4 h-4 text-orange" />
+        <MapPin className="w-4 h-4 text-primary" />
         <span>
           عرض <strong className="text-[#1E293B]">{filteredSites.length}</strong> من{' '}
           <strong className="text-[#1E293B]">{sites.length}</strong> موقع
@@ -273,7 +273,7 @@ export function MapPage(): React.ReactElement {
             </Badge>
           )}
           {selectedPeriod !== 'all' && (
-            <Badge variant="secondary" className="bg-orange text-white text-xs">
+            <Badge variant="secondary" className="bg-primary text-white text-xs">
               {labels.periods[selectedPeriod]}
             </Badge>
           )}
@@ -293,7 +293,7 @@ export function MapPage(): React.ReactElement {
       <div className="hidden md:block absolute top-4 right-4 z-[1000] w-72">
         <div className="glass rounded-2xl shadow-xl border border-border/50 p-5">
           <div className="flex items-center gap-2 mb-4">
-            <Filter className="w-5 h-5 text-orange" />
+            <Filter className="w-5 h-5 text-primary" />
             <h3 className="text-base font-bold text-[#1E293B]">تصفية المواقع</h3>
           </div>
           {filterContent}
@@ -307,9 +307,9 @@ export function MapPage(): React.ReactElement {
           onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
         >
           <div className="flex items-center gap-2">
-            <Filter className="w-4 h-4 text-orange" />
+            <Filter className="w-4 h-4 text-primary" />
             <span className="text-sm font-bold text-[#1E293B]">تصفية المواقع</span>
-            <Badge variant="secondary" className="text-xs bg-orange/10 text-orange">
+            <Badge variant="secondary" className="text-xs bg-primary/10 text-primary">
               {filteredSites.length} موقع
             </Badge>
           </div>

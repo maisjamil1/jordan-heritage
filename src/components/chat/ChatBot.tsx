@@ -87,7 +87,7 @@ export function ChatBot(): React.ReactElement {
           {/* Header */}
           <div
             className="flex items-center justify-between px-4 py-3"
-            style={{ background: 'linear-gradient(135deg, #f96b09 0%, #0074ae 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #741E31 0%, #511522 100%)' }}
           >
             <div className="flex items-center gap-2">
               <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
@@ -115,7 +115,7 @@ export function ChatBot(): React.ReactElement {
               >
                 <div
                   className={`w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center ${
-                    msg.sender === 'bot' ? 'bg-gradient-to-br from-[#f96b09] to-[#0074ae]' : 'bg-gray-300'
+                    msg.sender === 'bot' ? 'bg-gradient-to-br from-primary to-primary-dark' : 'bg-gray-300'
                   }`}
                 >
                   {msg.sender === 'bot' ? (
@@ -128,7 +128,7 @@ export function ChatBot(): React.ReactElement {
                   <div
                     className={`px-3 py-2 rounded-2xl text-sm leading-relaxed ${
                       msg.sender === 'user'
-                        ? 'bg-[#f96b09] text-white rounded-tr-sm'
+                        ? 'bg-primary text-primary-foreground rounded-tr-sm'
                         : 'bg-white text-gray-700 rounded-tl-sm shadow-sm border border-gray-100'
                     }`}
                   >
@@ -141,7 +141,7 @@ export function ChatBot(): React.ReactElement {
 
             {typing && (
               <div className="flex items-end gap-2">
-                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#f96b09] to-[#0074ae] flex items-center justify-center flex-shrink-0">
+                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center flex-shrink-0">
                   <Bot className="w-4 h-4 text-white" />
                 </div>
                 <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm border border-gray-100">
@@ -170,7 +170,7 @@ export function ChatBot(): React.ReactElement {
               onClick={sendMessage}
               disabled={!input.trim()}
               className="w-9 h-9 rounded-xl flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed hover:scale-105"
-              style={{ background: 'linear-gradient(135deg, #f96b09 0%, #0074ae 100%)' }}
+              style={{ background: 'linear-gradient(135deg, #741E31 0%, #511522 100%)' }}
             >
               <Send className="w-4 h-4 text-white rotate-180" />
             </button>
@@ -182,7 +182,7 @@ export function ChatBot(): React.ReactElement {
       <button
         onClick={() => setOpen((v) => !v)}
         className="group flex items-center gap-2 px-4 py-3 rounded-2xl text-white font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-        style={{ background: 'linear-gradient(135deg, #f96b09 0%, #0074ae 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #741E31 0%, #511522 100%)' }}
       >
         {open ? (
           <X className="w-5 h-5" />

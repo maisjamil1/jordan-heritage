@@ -80,14 +80,14 @@ export function ConfirmationScreen({
 
       {/* Reference Number Card */}
       <div
-        className={`bg-gradient-to-br from-orange/5 to-blue/5 rounded-2xl p-6 border border-orange/20 transition-all duration-700 delay-200 ${
+        className={`bg-gradient-to-br from-primary/5 to-blue/5 rounded-2xl p-6 border border-primary/20 transition-all duration-700 delay-200 ${
           showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >
         <p className="text-sm text-muted-custom mb-2">رقم المرجع الخاص بك</p>
         <div className="flex items-center justify-center gap-3">
           <span
-            className="text-3xl md:text-4xl font-black text-orange tracking-wider font-mono"
+            className="text-3xl md:text-4xl font-black text-primary tracking-wider font-mono"
             dir="ltr"
             id="reference-number"
           >
@@ -96,11 +96,11 @@ export function ConfirmationScreen({
           <button
             type="button"
             onClick={copyReferenceNumber}
-            className="p-2 rounded-lg hover:bg-orange/10 transition-colors cursor-pointer"
+            className="p-2 rounded-lg hover:bg-primary/10 transition-colors cursor-pointer"
             title="نسخ رقم المرجع"
             id="copy-reference-btn"
           >
-            <Copy className={`size-5 transition-colors ${copied ? 'text-success' : 'text-orange'}`} />
+            <Copy className={`size-5 transition-colors ${copied ? 'text-success' : 'text-primary'}`} />
           </button>
         </div>
         {copied && (
@@ -126,7 +126,7 @@ export function ConfirmationScreen({
             icon={MapPin}
             label="الموقع"
             value={submittedData.siteName}
-            iconColor="text-orange"
+            iconColor="text-primary"
           />
           <SummaryRow
             icon={AlertTriangle}
@@ -160,7 +160,7 @@ export function ConfirmationScreen({
         <Button
           onClick={onNewReport}
           variant="outline"
-          className="flex-1 h-12 text-base font-bold rounded-xl gap-2 border-orange text-orange hover:bg-orange/5 cursor-pointer"
+          className="flex-1 h-12 text-base font-bold rounded-xl gap-2 border-primary text-primary hover:bg-primary/5 cursor-pointer"
           id="new-report-btn"
         >
           <PlusCircle className="size-5" />

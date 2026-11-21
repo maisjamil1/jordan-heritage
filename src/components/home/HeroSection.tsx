@@ -13,12 +13,12 @@ export function HeroSection(): React.ReactElement {
         style={{ backgroundImage: `url('/banner.jpeg')` }}
       />
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange/10 text-orange text-sm font-medium mb-8 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-primary-on-dark text-sm font-medium mb-8 animate-fade-in-up">
             <Compass className="w-4 h-4" />
             <span>دائرة الآثار العامة الأردنية</span>
           </div>
@@ -28,11 +28,7 @@ export function HeroSection(): React.ReactElement {
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up"
             style={{
               animationDelay: '0.15s',
-                color:"#f96b09",
-              // background: 'linear-gradient(135deg, #f96b09 60%, #0074ae 70%)',
-              // WebkitBackgroundClip: 'text',
-              // WebkitTextFillColor: 'transparent',
-              // backgroundClip: 'text',
+                color: 'var(--primary-on-dark)',
             }}
           >
             اكتشف تراثنا الرقمي
@@ -53,7 +49,7 @@ export function HeroSection(): React.ReactElement {
           >
             <Button
               size="lg"
-              className="gradient-orange text-white rounded-xl px-8 py-6 text-base font-bold shadow-lg shadow-orange/25 hover:shadow-xl hover:shadow-orange/30 hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="gradient-primary text-white rounded-xl px-8 py-6 text-base font-bold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 cursor-pointer"
               onClick={() => navigate('/map')}
             >
               <Compass className="w-5 h-5 ms-2" />

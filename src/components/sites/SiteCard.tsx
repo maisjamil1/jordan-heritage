@@ -16,7 +16,7 @@ export function SiteCard({ site }: SiteCardProps): React.ReactElement {
   return (
     <div className="group bg-white rounded-xl overflow-hidden ring-1 ring-foreground/10 card-hover flex flex-col">
       {/* Image area */}
-      <div className="h-48 bg-gradient-to-br from-orange/10 via-blue/5 to-orange/20 flex items-center justify-center relative overflow-hidden">
+      <div className="h-48 bg-gradient-to-br from-primary/10 via-blue/5 to-primary/20 flex items-center justify-center relative overflow-hidden">
         <span className="text-6xl opacity-60 group-hover:scale-110 transition-transform duration-300">
           🏛️
         </span>
@@ -26,7 +26,7 @@ export function SiteCard({ site }: SiteCardProps): React.ReactElement {
         </div>
         {site.has3DModel && (
           <div className="absolute top-3 end-3">
-            <Badge className="bg-orange text-white gap-1">
+            <Badge className="bg-primary text-white gap-1">
               <Box className="size-3" />
               نموذج 3D
             </Badge>
@@ -37,7 +37,7 @@ export function SiteCard({ site }: SiteCardProps): React.ReactElement {
       {/* Content */}
       <div className="p-4 flex flex-col flex-1">
         {/* Title */}
-        <h3 className="text-lg font-bold text-heading mb-2 line-clamp-1 group-hover:text-orange transition-colors">
+        <h3 className="text-lg font-bold text-heading mb-2 line-clamp-1 group-hover:text-primary transition-colors">
           {site.name}
         </h3>
 
@@ -76,7 +76,7 @@ export function SiteCard({ site }: SiteCardProps): React.ReactElement {
 
         {/* Actions */}
         <div className="flex gap-2 pt-2 border-t border-border/50">
-          <Button asChild className="flex-1 gap-1.5 gradient-orange text-white hover:opacity-90" size="lg">
+          <Button asChild className="flex-1 gap-1.5 gradient-primary text-white hover:opacity-90" size="lg">
             <Link to={`/sites/${site.id}`}>
               <Eye className="size-4" />
               عرض التفاصيل

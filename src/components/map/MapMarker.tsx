@@ -83,7 +83,7 @@ export function MapMarker({ site }: MapMarkerProps): React.ReactElement {
           </div>
           <Button
             size="sm"
-            className="w-full gradient-orange text-white text-xs rounded-lg cursor-pointer"
+            className="w-full gradient-primary text-white text-xs rounded-lg cursor-pointer"
             onClick={() => navigate(`/sites/${site.id}`)}
           >
             عرض التفاصيل

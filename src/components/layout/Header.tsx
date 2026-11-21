@@ -41,7 +41,7 @@ export function Header(): React.ReactElement {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header style={{"background":"#d45a00"}} className="sticky top-0 z-50 gradient-header  glass border-b border-white/20">
+    <header className="sticky top-0 z-50 gradient-header border-b border-white/20">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -104,7 +104,7 @@ export function Header(): React.ReactElement {
                       onClick={() => setMobileOpen(false)}
                       className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm transition-all duration-200 ${
                         isActive
-                          ? 'bg-orange text-white font-bold'
+                          ? 'bg-primary text-white font-bold'
                           : 'text-foreground hover:bg-muted'
                       }`}
                     >

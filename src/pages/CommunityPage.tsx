@@ -149,10 +149,10 @@ interface StatItem {
 }
 
 const COMMUNITY_STATS: StatItem[] = [
-  { icon: Users, value: 156, label: 'عدد المتطوعين', color: 'text-orange', bgColor: 'bg-orange/10' },
+  { icon: Users, value: 156, label: 'عدد المتطوعين', color: 'text-primary', bgColor: 'bg-primary/10' },
   { icon: FileWarning, value: 89, label: 'عدد البلاغات', color: 'text-blue', bgColor: 'bg-blue/10' },
   { icon: Sparkles, value: 12, label: 'المبادرات النشطة', color: 'text-success', bgColor: 'bg-success/10' },
-  { icon: Newspaper, value: 45, label: 'المقالات المنشورة', color: 'text-orange-dark', bgColor: 'bg-orange/10' },
+  { icon: Newspaper, value: 45, label: 'المقالات المنشورة', color: 'text-primary-dark', bgColor: 'bg-primary/10' },
 ];
 
 /* ─── Count Animation Hook ─────────────────────────────────────────── */
@@ -257,7 +257,7 @@ export function CommunityPage(): React.ReactElement {
         <DialogContent className="sm:max-w-lg max-h-[85vh] overflow-y-auto" id="volunteer-dialog">
           <DialogHeader>
             <DialogTitle className="text-lg font-bold text-heading flex items-center gap-2">
-              <HandHelping className="size-5 text-orange" />
+              <HandHelping className="size-5 text-primary" />
               تطوع معنا
             </DialogTitle>
             <DialogDescription>
@@ -276,7 +276,7 @@ export function CommunityPage(): React.ReactElement {
               </p>
               <Button
                 onClick={() => setActiveDialog(null)}
-                className="h-10 px-6 text-sm font-bold gradient-orange text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
+                className="h-10 px-6 text-sm font-bold gradient-primary text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity"
                 id="volunteer-close-success-btn"
               >
                 إغلاق
@@ -377,7 +377,7 @@ export function CommunityPage(): React.ReactElement {
               <div className="flex gap-2 pt-2">
                 <Button
                   type="submit"
-                  className="flex-1 h-10 text-sm font-bold gradient-orange text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity gap-1.5"
+                  className="flex-1 h-10 text-sm font-bold gradient-primary text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity gap-1.5"
                   id="volunteer-submit-btn"
                 >
                   <UserCheck className="size-4" />
@@ -402,7 +402,7 @@ export function CommunityPage(): React.ReactElement {
         <DialogContent className="sm:max-w-lg max-h-[85vh] overflow-y-auto" id="initiatives-dialog">
           <DialogHeader>
             <DialogTitle className="text-lg font-bold text-heading flex items-center gap-2">
-              <Lightbulb className="size-5 text-orange" />
+              <Lightbulb className="size-5 text-primary" />
               المبادرات المحلية
             </DialogTitle>
             <DialogDescription>
@@ -416,7 +416,7 @@ export function CommunityPage(): React.ReactElement {
                 key={initiative.id}
                 className="rounded-lg border border-border/50 p-4 hover:bg-muted/50 transition-colors"
               >
-                <h4 className="text-base font-bold text-orange mb-1.5">
+                <h4 className="text-base font-bold text-primary mb-1.5">
                   {initiative.name}
                 </h4>
                 <p className="text-sm text-body leading-relaxed mb-3">
@@ -435,7 +435,7 @@ export function CommunityPage(): React.ReactElement {
                   </div>
                   <Button
                     size="sm"
-                    className="h-7 px-3 text-xs font-semibold gradient-orange text-white rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                    className="h-7 px-3 text-xs font-semibold gradient-primary text-white rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                     id={`initiative-register-${initiative.id}`}
                   >
                     سجل اهتمامك
@@ -462,7 +462,7 @@ export function CommunityPage(): React.ReactElement {
         <DialogContent className="sm:max-w-lg max-h-[85vh] overflow-y-auto" id="forum-dialog">
           <DialogHeader>
             <DialogTitle className="text-lg font-bold text-heading flex items-center gap-2">
-              <MessageSquare className="size-5 text-orange" />
+              <MessageSquare className="size-5 text-primary" />
               المنتدى المجتمعي
             </DialogTitle>
             <DialogDescription>
@@ -476,7 +476,7 @@ export function CommunityPage(): React.ReactElement {
                 key={thread.id}
                 className="rounded-lg border border-border/50 p-4 hover:bg-muted/50 transition-colors cursor-pointer"
               >
-                <h5 className="text-sm font-bold text-orange mb-1.5 leading-snug">
+                <h5 className="text-sm font-bold text-primary mb-1.5 leading-snug">
                   {thread.title}
                 </h5>
                 <p className="text-xs text-body leading-relaxed mb-3 line-clamp-2">
@@ -525,13 +525,13 @@ function CommunityActionCard({ card, onAction }: CommunityActionCardProps): Reac
     <div
       className={cn(
         'bg-white rounded-xl ring-1 ring-foreground/10 overflow-hidden transition-all duration-300',
-        'hover:shadow-lg hover:-translate-y-1 hover:ring-orange/30'
+        'hover:shadow-lg hover:-translate-y-1 hover:ring-primary/30'
       )}
       id={`community-card-${card.id}`}
     >
       <div className="p-6 md:p-8 text-center">
         {/* Icon */}
-        <div className="size-16 md:size-20 rounded-2xl gradient-orange mx-auto mb-4 flex items-center justify-center shadow-md">
+        <div className="size-16 md:size-20 rounded-2xl gradient-primary mx-auto mb-4 flex items-center justify-center shadow-md">
           <Icon className="size-8 md:size-10 text-white" />
         </div>
 
@@ -546,7 +546,7 @@ function CommunityActionCard({ card, onAction }: CommunityActionCardProps): Reac
         {/* CTA Button */}
         <Button
           onClick={onAction}
-          className="h-10 px-6 text-sm font-bold gradient-orange text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity gap-1.5 shadow-md shadow-orange/20"
+          className="h-10 px-6 text-sm font-bold gradient-primary text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity gap-1.5 shadow-md shadow-primary/20"
           id={`community-cta-${card.id}`}
         >
           {card.cta}
@@ -565,7 +565,7 @@ function CommunityStatsBar(): React.ReactElement {
   return (
     <div className="bg-section-alt rounded-2xl py-10 px-4 md:px-8" ref={ref}>
       <h2 className="text-2xl md:text-3xl font-extrabold text-heading mb-8 text-center flex items-center justify-center gap-2">
-        <Sparkles className="size-7 text-orange" />
+        <Sparkles className="size-7 text-primary" />
         أرقام المشاركة
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
