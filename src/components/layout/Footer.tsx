@@ -38,7 +38,7 @@ export function Footer(): React.ReactElement {
           {/* About Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-orange flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -50,11 +50,11 @@ export function Footer(): React.ReactElement {
               بوابة إلكترونية شاملة تهدف إلى توثيق وحماية التراث الأثري والثقافي في المملكة الأردنية الهاشمية.
             </p>
             <div className="space-y-2">
-              <a href="tel:+96264612311" className="flex items-center gap-2 text-white/70 hover:text-orange text-sm transition-colors">
+              <a href="tel:+96264612311" className="flex items-center gap-2 text-white/70 hover:text-primary-on-dark text-sm transition-colors">
                 <Phone className="w-4 h-4" />
                 <span dir="ltr">+962 6 461 2311</span>
               </a>
-              <a href="mailto:info@doa.gov.jo" className="flex items-center gap-2 text-white/70 hover:text-orange text-sm transition-colors">
+              <a href="mailto:info@doa.gov.jo" className="flex items-center gap-2 text-white/70 hover:text-primary-on-dark text-sm transition-colors">
                 <Mail className="w-4 h-4" />
                 <span>info@doa.gov.jo</span>
               </a>
@@ -70,7 +70,7 @@ export function Footer(): React.ReactElement {
                   <li key={link.path}>
                     <Link
                       to={link.path}
-                      className="text-white/70 hover:text-orange text-sm transition-colors"
+                      className="text-white/70 hover:text-primary-on-dark text-sm transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -89,7 +89,7 @@ export function Footer(): React.ReactElement {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-orange transition-colors text-white/70 hover:text-white"
+                  className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-white/70 hover:text-white"
                 >
                   {social.icon}
                 </a>

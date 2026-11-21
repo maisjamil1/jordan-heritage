@@ -146,17 +146,17 @@ export function VisitPage(): React.ReactElement {
         {/* Visitor Tips Section */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-3xl font-extrabold text-heading mb-8 flex items-center justify-center gap-2">
-            <CheckCircle2 className="size-7 text-orange" />
+            <CheckCircle2 className="size-7 text-primary" />
             نصائح الزائر
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {TIPS.map((tip, idx) => (
               <div
                 key={idx}
-                className="bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center gap-3 transition-all hover:border-orange/30 hover:shadow-sm"
+                className="bg-white border border-border rounded-xl p-4 flex flex-col items-center text-center gap-3 transition-all hover:border-primary/30 hover:shadow-sm"
               >
-                <div className="size-10 rounded-full bg-orange/10 flex items-center justify-center">
-                  <tip.icon className="size-5 text-orange" />
+                <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <tip.icon className="size-5 text-primary" />
                 </div>
                 <span className="text-sm font-medium text-heading">{tip.text}</span>
               </div>
@@ -216,14 +216,14 @@ export function VisitPage(): React.ReactElement {
                   </div>
                   <div className="mt-2 p-4 bg-muted/50 rounded-lg flex justify-between items-center">
                     <span className="font-medium">السعر الإجمالي (تقديري):</span>
-                    <span className="text-lg font-bold text-orange">{totalPrice} دينار</span>
+                    <span className="text-lg font-bold text-primary">{totalPrice} دينار</span>
                   </div>
                 </div>
                 <DialogFooter>
                   <Button
                     onClick={handleBookingConfirm}
                     disabled={!selectedSite || !visitDate}
-                    className="w-full gradient-orange text-white"
+                    className="w-full gradient-primary text-white"
                   >
                     تأكيد الحجز المبدئي
                   </Button>
@@ -259,10 +259,10 @@ export function VisitPage(): React.ReactElement {
             </DialogHeader>
             <div className="grid gap-4 py-4">
               {TOURS.map((tour) => (
-                <div key={tour.id} className="border rounded-xl p-4 flex flex-col gap-3 hover:border-orange/40 transition-colors">
+                <div key={tour.id} className="border rounded-xl p-4 flex flex-col gap-3 hover:border-primary/40 transition-colors">
                   <div className="flex justify-between items-start">
                     <h4 className="font-bold text-heading">{tour.name}</h4>
-                    <span className="text-orange font-bold">{tour.price}</span>
+                    <span className="text-primary font-bold">{tour.price}</span>
                   </div>
                   <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
                     <span className="flex items-center gap-1"><Clock className="size-3" /> {tour.duration}</span>
@@ -286,7 +286,7 @@ export function VisitPage(): React.ReactElement {
             </DialogHeader>
             <div className="flex flex-col items-center gap-6 py-8">
               <div className="size-20 bg-muted rounded-2xl flex items-center justify-center">
-                <Smartphone className="size-10 text-orange" />
+                <Smartphone className="size-10 text-primary" />
               </div>
               <div className="grid grid-cols-2 gap-4 w-full">
                 <button className="flex items-center justify-center gap-2 bg-black text-white p-3 rounded-xl hover:opacity-90 transition-opacity">
@@ -315,7 +315,7 @@ export function VisitPage(): React.ReactElement {
             <div className="grid gap-6 py-4">
               {/* Hours */}
               <div>
-                <h4 className="flex items-center gap-2 font-bold mb-3 text-orange">
+                <h4 className="flex items-center gap-2 font-bold mb-3 text-primary">
                   <Clock className="size-4" /> أوقات الدوام
                 </h4>
                 <div className="bg-muted/30 rounded-lg p-3 text-sm space-y-2">
@@ -332,7 +332,7 @@ export function VisitPage(): React.ReactElement {
 
               {/* Prices */}
               <div>
-                <h4 className="flex items-center gap-2 font-bold mb-3 text-orange">
+                <h4 className="flex items-center gap-2 font-bold mb-3 text-primary">
                   <Coins className="size-4" /> أسعار التذاكر
                 </h4>
                 <div className="bg-muted/30 rounded-lg p-3 text-sm space-y-2">
@@ -352,20 +352,20 @@ export function VisitPage(): React.ReactElement {
 
               {/* Rules */}
               <div>
-                <h4 className="flex items-center gap-2 font-bold mb-3 text-orange">
+                <h4 className="flex items-center gap-2 font-bold mb-3 text-primary">
                   <Scale className="size-4" /> تعليمات عامة
                 </h4>
                 <ul className="text-sm space-y-2">
                   <li className="flex gap-2">
-                    <span className="text-orange">•</span>
+                    <span className="text-primary">•</span>
                     <span>يمنع منعاً باتاً العبث بالآثار أو الكتابة عليها.</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-orange">•</span>
+                    <span className="text-primary">•</span>
                     <span>الالتزام بالمسارات المحددة داخل المواقع.</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-orange">•</span>
+                    <span className="text-primary">•</span>
                     <span>الحفاظ على نظافة الموقع ووضع النفايات في أماكنها الحصيصة.</span>
                   </li>
                 </ul>
@@ -390,8 +390,8 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon: Icon, title, description, cta, onClick }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-2xl p-6 md:p-8 flex flex-col text-center items-center gap-4 ring-1 ring-foreground/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-b-4 border-b-transparent hover:border-b-orange">
-      <div className="size-20 rounded-2xl bg-orange/5 text-orange flex items-center justify-center mb-2">
+    <div className="bg-white rounded-2xl p-6 md:p-8 flex flex-col text-center items-center gap-4 ring-1 ring-foreground/10 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-b-4 border-b-transparent hover:border-b-primary">
+      <div className="size-20 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-2">
         <Icon className="size-10" />
       </div>
       <h3 className="text-2xl font-bold text-heading">{title}</h3>
@@ -399,7 +399,7 @@ function ServiceCard({ icon: Icon, title, description, cta, onClick }: ServiceCa
       <div className="flex-1" />
       <Button
         onClick={onClick}
-        className="w-full mt-4 gradient-orange text-white gap-2 font-bold py-6 text-lg rounded-xl"
+        className="w-full mt-4 gradient-primary text-white gap-2 font-bold py-6 text-lg rounded-xl"
       >
         {cta}
         <ChevronLeft className="size-5" />

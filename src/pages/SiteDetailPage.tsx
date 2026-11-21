@@ -52,7 +52,7 @@ export function SiteDetailPage(): React.ReactElement {
           </div>
           <h1 className="text-2xl font-bold text-heading mb-2">الموقع غير موجود</h1>
           <p className="text-body mb-6">لم يتم العثور على الموقع المطلوب.</p>
-          <Button asChild className="gradient-orange text-white">
+          <Button asChild className="gradient-primary text-white">
             <Link to="/sites">
               <ArrowRight className="size-4" />
               العودة إلى المواقع الأثرية
@@ -68,12 +68,12 @@ export function SiteDetailPage(): React.ReactElement {
       <div className="max-w-[1400px] mx-auto px-4 md:px-6">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6 md:mb-8">
-          <Link to="/" className="flex items-center gap-1 hover:text-orange transition-colors">
+          <Link to="/" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Home className="size-3.5" />
             الرئيسية
           </Link>
           <ChevronLeft className="size-3.5" />
-          <Link to="/sites" className="hover:text-orange transition-colors">
+          <Link to="/sites" className="hover:text-primary transition-colors">
             المواقع الأثرية
           </Link>
           <ChevronLeft className="size-3.5" />
@@ -83,7 +83,7 @@ export function SiteDetailPage(): React.ReactElement {
         {/* Hero area */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 mb-8 md:mb-12">
           {/* Image */}
-          <div className="lg:col-span-3 h-64 md:h-80 lg:h-[420px] rounded-2xl bg-gradient-to-br from-orange/15 via-blue/10 to-orange/20 flex items-center justify-center ring-1 ring-foreground/5 overflow-hidden">
+          <div className="lg:col-span-3 h-64 md:h-80 lg:h-[420px] rounded-2xl bg-gradient-to-br from-primary/15 via-blue/10 to-primary/20 flex items-center justify-center ring-1 ring-foreground/5 overflow-hidden">
             <span className="text-8xl md:text-9xl opacity-40">🏛️</span>
           </div>
 
@@ -134,7 +134,7 @@ export function SiteDetailPage(): React.ReactElement {
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-2 mt-auto pt-4">
-              <Button asChild className="flex-1 gradient-orange text-white gap-2" size="lg">
+              <Button asChild className="flex-1 gradient-primary text-white gap-2" size="lg">
                 <Link to={`/map?site=${site.id}`}>
                   <Map className="size-4" />
                   عرض على الخريطة
@@ -153,7 +153,7 @@ export function SiteDetailPage(): React.ReactElement {
         {/* Full description */}
         <div className="bg-section-alt rounded-2xl p-6 md:p-8 mb-8 md:mb-12">
           <h2 className="text-xl md:text-2xl font-bold text-heading mb-4 flex items-center gap-2">
-            <Landmark className="size-6 text-orange" />
+            <Landmark className="size-6 text-primary" />
             عن الموقع
           </h2>
           <p className="text-body leading-loose text-base md:text-lg">{site.longDescription}</p>
@@ -163,7 +163,7 @@ export function SiteDetailPage(): React.ReactElement {
         {site.gallery.length > 0 && (
           <div className="mb-8 md:mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-heading mb-4 flex items-center gap-2">
-              <Image className="size-6 text-orange" />
+              <Image className="size-6 text-primary" />
               معرض الصور
             </h2>
             <SiteGallery gallery={site.gallery} siteName={site.name} />
@@ -174,7 +174,7 @@ export function SiteDetailPage(): React.ReactElement {
         {relatedSites.length > 0 && (
           <div>
             <h2 className="text-xl md:text-2xl font-bold text-heading mb-6 flex items-center gap-2">
-              <Landmark className="size-6 text-orange" />
+              <Landmark className="size-6 text-primary" />
               مواقع ذات صلة
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
@@ -202,10 +202,10 @@ function InfoItem({ icon: Icon, label, value, highlight }: InfoItemProps): React
   return (
     <div className="bg-white rounded-xl p-3 ring-1 ring-foreground/5">
       <div className="flex items-center gap-1.5 mb-1">
-        <Icon className={`size-4 ${highlight ? 'text-orange' : 'text-muted-foreground'}`} />
+        <Icon className={`size-4 ${highlight ? 'text-primary' : 'text-muted-foreground'}`} />
         <span className="text-xs text-muted-foreground">{label}</span>
       </div>
-      <span className={`text-sm font-semibold ${highlight ? 'text-orange' : 'text-heading'}`}>
+      <span className={`text-sm font-semibold ${highlight ? 'text-primary' : 'text-heading'}`}>
         {value}
       </span>
     </div>

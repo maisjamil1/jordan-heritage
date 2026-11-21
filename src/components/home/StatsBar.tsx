@@ -15,8 +15,8 @@ const STATS: StatItem[] = [
     icon: <Landmark className="w-7 h-7" />,
     value: 548,
     label: 'موقع أثري',
-    color: 'text-orange',
-    bgColor: 'bg-orange/10',
+    color: 'text-primary',
+    bgColor: 'bg-primary/10',
   },
   {
     icon: <Archive className="w-7 h-7" />,
@@ -36,8 +36,8 @@ const STATS: StatItem[] = [
     icon: <Camera className="w-7 h-7" />,
     value: 2156,
     label: 'صورة أرشيفية',
-    color: 'text-orange-dark',
-    bgColor: 'bg-orange/10',
+    color: 'text-primary-dark',
+    bgColor: 'bg-primary/10',
   },
 ];
 

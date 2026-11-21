@@ -177,7 +177,7 @@ export function ArchivePage(): React.ReactElement {
 
               <div className="flex gap-3">
                 <Button
-                  className="flex-1 gradient-orange text-white rounded-lg cursor-pointer"
+                  className="flex-1 gradient-primary text-white rounded-lg cursor-pointer"
                   onClick={() => handleDownload(selectedItem)}
                 >
                   <Download className="w-4 h-4 ms-2" />
@@ -200,7 +200,7 @@ export function ArchivePage(): React.ReactElement {
       {/* Download Notification Toast */}
       {downloadNotification && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[2000] bg-[#1E293B] text-white px-6 py-3 rounded-xl shadow-xl flex items-center gap-3 animate-fade-in-up">
-          <Download className="w-5 h-5 text-orange" />
+          <Download className="w-5 h-5 text-primary" />
           <span className="text-sm">جاري تحميل: {downloadNotification}</span>
         </div>
       )}

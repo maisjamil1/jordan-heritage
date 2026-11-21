@@ -145,7 +145,7 @@ export function DamageForm({ onSubmit, isSubmitting }: DamageFormProps): React.R
       {/* Site Name Select */}
       <div className="space-y-2">
         <Label htmlFor="site-name" className="text-sm font-semibold text-heading">
-          <MapPin className="size-4 text-orange" />
+          <MapPin className="size-4 text-primary" />
           اسم الموقع <span className="text-danger">*</span>
         </Label>
         <Select
@@ -180,7 +180,7 @@ export function DamageForm({ onSubmit, isSubmitting }: DamageFormProps): React.R
       {/* Damage Type Select */}
       <div className="space-y-2">
         <Label htmlFor="damage-type" className="text-sm font-semibold text-heading">
-          <AlertTriangle className="size-4 text-orange" />
+          <AlertTriangle className="size-4 text-primary" />
           نوع الضرر <span className="text-danger">*</span>
         </Label>
         <Select
@@ -215,7 +215,7 @@ export function DamageForm({ onSubmit, isSubmitting }: DamageFormProps): React.R
       {/* Description Textarea */}
       <div className="space-y-2">
         <Label htmlFor="damage-description" className="text-sm font-semibold text-heading">
-          <Camera className="size-4 text-orange" />
+          <Camera className="size-4 text-primary" />
           وصف الضرر <span className="text-danger">*</span>
         </Label>
         <Textarea
@@ -246,7 +246,7 @@ export function DamageForm({ onSubmit, isSubmitting }: DamageFormProps): React.R
       {/* Photo Upload */}
       <div className="space-y-2">
         <Label className="text-sm font-semibold text-heading">
-          <Camera className="size-4 text-orange" />
+          <Camera className="size-4 text-primary" />
           صورة الضرر
           <span className="text-xs text-muted-custom font-normal me-1">(اختياري)</span>
         </Label>
@@ -267,16 +267,16 @@ export function DamageForm({ onSubmit, isSubmitting }: DamageFormProps): React.R
             }}
             className={`relative flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed py-10 px-6 cursor-pointer transition-all duration-300 ${
               isDragOver
-                ? 'border-orange bg-orange/10 scale-[1.01]'
-                : 'border-gray-300 hover:border-orange/50 hover:bg-orange/5'
+                ? 'border-primary bg-primary/10 scale-[1.01]'
+                : 'border-gray-300 hover:border-primary/50 hover:bg-primary/5'
             }`}
             id="photo-upload-zone"
           >
             <div className={`p-4 rounded-full transition-colors duration-300 ${
-              isDragOver ? 'bg-orange/20' : 'bg-gray-100'
+              isDragOver ? 'bg-primary/20' : 'bg-gray-100'
             }`}>
               <Upload className={`size-8 transition-colors duration-300 ${
-                isDragOver ? 'text-orange' : 'text-gray-400'
+                isDragOver ? 'text-primary' : 'text-gray-400'
               }`} />
             </div>
             <div className="text-center">
@@ -366,7 +366,7 @@ export function DamageForm({ onSubmit, isSubmitting }: DamageFormProps): React.R
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full h-12 text-base font-bold gradient-orange text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl shadow-orange/25 disabled:opacity-60"
+        className="w-full h-12 text-base font-bold gradient-primary text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl shadow-primary/25 disabled:opacity-60"
         id="submit-damage-report"
       >
         {isSubmitting ? (

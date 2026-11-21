@@ -122,7 +122,7 @@ const LATEST_RESEARCH: LatestResearch[] = [
 ];
 
 const CATEGORY_BADGE_COLOR: Record<string, string> = {
-  theses: 'bg-orange/10 text-orange',
+  theses: 'bg-primary/10 text-primary',
   labs: 'bg-blue/10 text-blue',
   materials: 'bg-success/10 text-success',
   researchers: 'bg-purple-100 text-purple-700',
@@ -161,7 +161,7 @@ export function EducationPage(): React.ReactElement {
         {/* ── Latest Research Section ──────────────────────────────── */}
         <div className="mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl font-extrabold text-heading mb-6 flex items-center justify-center gap-2">
-            <Sparkles className="size-7 text-orange" />
+            <Sparkles className="size-7 text-primary" />
             أحدث الأبحاث
           </h2>
 
@@ -206,7 +206,7 @@ export function EducationPage(): React.ReactElement {
             <DialogTitle className="text-lg font-bold text-heading flex items-center gap-2">
               {activeResource && ICON_MAP[activeResource.icon] && (() => {
                 const IconComp = ICON_MAP[activeResource.icon];
-                return <IconComp className="size-5 text-orange" />;
+                return <IconComp className="size-5 text-primary" />;
               })()}
               {activeResource?.name}
             </DialogTitle>
@@ -219,8 +219,8 @@ export function EducationPage(): React.ReactElement {
                 key={idx}
                 className="flex items-start gap-3 rounded-lg border border-border/50 p-3 hover:bg-muted/50 transition-colors"
               >
-                <div className="size-8 rounded-lg bg-orange/10 flex-shrink-0 flex items-center justify-center mt-0.5">
-                  <FileText className="size-4 text-orange" />
+                <div className="size-8 rounded-lg bg-primary/10 flex-shrink-0 flex items-center justify-center mt-0.5">
+                  <FileText className="size-4 text-primary" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-semibold text-heading truncate">{item.title}</p>
@@ -276,12 +276,12 @@ function EducationCard({ resource, onCTAClick }: EducationCardProps): React.Reac
     <div
       className={cn(
         'bg-white rounded-xl ring-1 ring-foreground/10 overflow-hidden transition-all duration-300',
-        'hover:shadow-lg hover:-translate-y-1 hover:ring-orange/30'
+        'hover:shadow-lg hover:-translate-y-1 hover:ring-primary/30'
       )}
     >
       <div className="p-6 md:p-8 text-center">
         {/* Icon */}
-        <div className="size-16 md:size-20 rounded-2xl gradient-orange mx-auto mb-4 flex items-center justify-center shadow-md">
+        <div className="size-16 md:size-20 rounded-2xl gradient-primary mx-auto mb-4 flex items-center justify-center shadow-md">
           <Icon className="size-8 md:size-10 text-white" />
         </div>
 
@@ -294,7 +294,7 @@ function EducationCard({ resource, onCTAClick }: EducationCardProps): React.Reac
         </p>
 
         {/* Count badge */}
-        <Badge className="gradient-orange text-white text-sm px-4 py-1 h-auto rounded-full mb-5">
+        <Badge className="gradient-primary text-white text-sm px-4 py-1 h-auto rounded-full mb-5">
           {resource.count} {resource.countLabel}
         </Badge>
 
@@ -305,7 +305,7 @@ function EducationCard({ resource, onCTAClick }: EducationCardProps): React.Reac
               e.stopPropagation();
               onCTAClick();
             }}
-            className="h-10 px-6 text-sm font-bold gradient-orange text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity gap-1.5 shadow-md shadow-orange/20"
+            className="h-10 px-6 text-sm font-bold gradient-primary text-white rounded-xl cursor-pointer hover:opacity-90 transition-opacity gap-1.5 shadow-md shadow-primary/20"
           >
             {CTA_LABELS[resource.category] ?? 'عرض المزيد'}
             <ArrowLeft className="size-4" />

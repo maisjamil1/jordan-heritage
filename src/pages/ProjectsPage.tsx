@@ -67,8 +67,8 @@ const STATUS_MAP: Record<string, StatusConfig> = {
   },
   planned: {
     label: 'مخطط',
-    color: 'text-orange',
-    bgColor: 'bg-orange/10',
+    color: 'text-primary',
+    bgColor: 'bg-primary/10',
     icon: CalendarClock,
   },
 };
@@ -123,7 +123,7 @@ function FeaturedProject(): React.ReactElement {
       id="featured-project-unaizah"
     >
       {/* Header band */}
-      <div className="gradient-orange px-6 py-4 md:px-8 md:py-5">
+      <div className="gradient-primary px-6 py-4 md:px-8 md:py-5">
         <h2 className="text-xl md:text-2xl font-extrabold text-white text-center">
           مشروع قلعة عنيزة الاثرية
         </h2>
@@ -193,7 +193,7 @@ function FeaturedProject(): React.ReactElement {
                   key={resource.label}
                   className="flex items-center gap-3 rounded-lg border border-border/50 p-3 hover:bg-muted/50 transition-colors"
                 >
-                  <div className="size-10 rounded-lg gradient-orange flex-shrink-0 flex items-center justify-center shadow-sm">
+                  <div className="size-10 rounded-lg gradient-primary flex-shrink-0 flex items-center justify-center shadow-sm">
                     <Icon className="size-5 text-white" />
                   </div>
                   <span className="text-sm md:text-base font-semibold text-heading">
@@ -223,7 +223,7 @@ function ProjectCard({ project }: ProjectCardProps): React.ReactElement {
     <div
       className={cn(
         'bg-white rounded-xl ring-1 ring-foreground/10 overflow-hidden transition-all duration-300 flex flex-col',
-        'hover:shadow-lg hover:-translate-y-1 hover:ring-orange/30'
+        'hover:shadow-lg hover:-translate-y-1 hover:ring-primary/30'
       )}
       id={`project-card-${project.id}`}
     >
@@ -260,7 +260,7 @@ function ProjectCard({ project }: ProjectCardProps): React.ReactElement {
             <div
               className={cn(
                 'h-full rounded-full transition-all duration-700',
-                project.status === 'completed' ? 'bg-success' : 'gradient-orange'
+                project.status === 'completed' ? 'bg-success' : 'gradient-primary'
               )}
               style={{ width: `${project.progress}%` }}
             />

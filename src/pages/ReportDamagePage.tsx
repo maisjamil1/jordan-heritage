@@ -63,8 +63,8 @@ export function ReportDamagePage(): React.ReactElement {
 
         {/* Form / Confirmation Card */}
         <div className="bg-white rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden">
-          {/* Orange gradient header stripe */}
-          <div className="h-2 gradient-orange" />
+          {/* Primary gradient header stripe */}
+          <div className="h-2 gradient-primary" />
 
           <div className="p-6 md:p-8">
             {submittedReport ? (

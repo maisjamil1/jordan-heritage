@@ -12,16 +12,16 @@ const governorates: GovernorateMarker[] = governoratesData;
 const JORDAN_CENTER: [number, number] = [31.5, 36.0];
 const JORDAN_ZOOM = 7;
 
-// Custom orange marker icon
-const orangeMarkerIcon = new L.DivIcon({
+// Custom primary marker icon
+const primaryMarkerIcon = new L.DivIcon({
   className: 'custom-marker',
   html: `<div style="
     width: 28px;
     height: 28px;
-    background: linear-gradient(135deg, #f96b09 0%, #ff8c3a 100%);
+    background: linear-gradient(135deg, #741E31 0%, #975664 100%);
     border-radius: 50%;
     border: 3px solid white;
-    box-shadow: 0 4px 12px rgba(249, 107, 9, 0.4);
+    box-shadow: 0 4px 12px rgba(116, 30, 49, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +90,7 @@ export function JordanMapPreview(): React.ReactElement {
               <Marker
                 key={gov.id}
                 position={[gov.lat, gov.lng]}
-                icon={orangeMarkerIcon}
+                icon={primaryMarkerIcon}
                 eventHandlers={{
                   click: () => handleGovernorateClick(gov.id),
                 }}
@@ -105,7 +105,7 @@ export function JordanMapPreview(): React.ReactElement {
                     </p>
                     <button
                       onClick={() => handleGovernorateClick(gov.id)}
-                      className="mt-2 text-xs text-orange font-medium hover:underline cursor-pointer"
+                      className="mt-2 text-xs text-primary font-medium hover:underline cursor-pointer"
                     >
                       استكشف المواقع ←
                     </button>
@@ -119,7 +119,7 @@ export function JordanMapPreview(): React.ReactElement {
           <div className="px-6 py-4 bg-[#F8FAFC] border-t border-border/50 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-4 text-sm text-[#475569]">
               <div className="flex items-center gap-1.5">
-                <div className="w-3 h-3 rounded-full gradient-orange" />
+                <div className="w-3 h-3 rounded-full gradient-primary" />
                 <span>محافظة</span>
               </div>
               <span className="text-muted-foreground">|</span>

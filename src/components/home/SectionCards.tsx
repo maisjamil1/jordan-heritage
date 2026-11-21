@@ -26,8 +26,8 @@ const SECTION_CARDS: SectionCard[] = [
     description: 'استكشف أكثر من 500 موقع أثري موثق عبر محافظات الأردن',
     path: '/sites',
     icon: <Landmark className="w-8 h-8" />,
-    iconBg: 'bg-orange/10',
-    iconColor: 'text-orange',
+    iconBg: 'bg-primary/10',
+    iconColor: 'text-primary',
     stats: '548 موقع',
   },
   {
@@ -71,8 +71,8 @@ const SECTION_CARDS: SectionCard[] = [
     description: 'انضم لمبادرات التطوع وشارك في المنتدى المجتمعي',
     path: '/community',
     icon: <Users className="w-8 h-8" />,
-    iconBg: 'bg-orange/10',
-    iconColor: 'text-orange',
+    iconBg: 'bg-primary/10',
+    iconColor: 'text-primary',
     stats: '6 مبادرات',
   },
 ];
@@ -108,7 +108,7 @@ export function SectionCards(): React.ReactElement {
               onKeyDown={(e) => { if (e.key === 'Enter') navigate(card.path); }}
               role="button"
               tabIndex={0}
-              className="bg-white rounded-2xl p-6 shadow-sm border-2 border-transparent hover:border-orange/30 cursor-pointer group transition-all duration-300 card-hover opacity-0"
+              className="bg-white rounded-2xl p-6 shadow-sm border-2 border-transparent hover:border-primary/30 cursor-pointer group transition-all duration-300 card-hover opacity-0"
               style={{
                 animation: isVisible
                   ? `fade-in-up 0.6s ease-out ${0.1 + index * 0.08}s forwards`
@@ -121,7 +121,7 @@ export function SectionCards(): React.ReactElement {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-bold text-[#1E293B] mb-2 group-hover:text-orange transition-colors">
+              <h3 className="text-lg font-bold text-[#1E293B] mb-2 group-hover:text-primary transition-colors">
                 {card.title}
               </h3>
 
@@ -135,7 +135,7 @@ export function SectionCards(): React.ReactElement {
                 <Badge variant="secondary" className="bg-[#F8FAFC] text-[#475569] text-xs font-medium border border-border/50 px-3 py-1">
                   {card.stats}
                 </Badge>
-                <span className="text-orange text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   استكشف ←
                 </span>
               </div>
